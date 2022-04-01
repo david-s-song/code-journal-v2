@@ -31,4 +31,22 @@
   .column-half {
     width: 50%;
   }
+
+  .display-flex {
+    display: flex;
+  }
+
+  .title-photo-container {
+    margin-left: 30px;
+  }
+
+  #notes,
+  .btn-wrapper {
+    width: 714px;
+  }
+
+  .btn-wrapper {
+    display: flex;
+    justify-content: end;
+  }
 }

@@ -1,0 +1,84 @@
+* {
+  font-family: "Proza Libre", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.header-background-purple {
+  background-color: #562b81;
+}
+
+.header-logo {
+  color: white;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.new-entry-header {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 41px;
+  color: #292929;
+}
+
+.image {
+  width: 340px;
+  height: 245px;
+  left: 17px;
+  top: 126px;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+#title,
+#photourl,
+#notes {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.placeholder {
+  width: 341px;
+  height: 40px;
+  left: 16px;
+  top: 426px;
+  background: #fff;
+  border: 1px solid #b6b6b6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.textarea {
+  width: 341px;
+  height: 149px;
+  left: 17px;
+  top: 623px;
+  background: #fff;
+  border: 1px solid #b6b6b6;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.info-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: end;
+  width: 341px;
+}
+
+.button-save {
+  cursor: pointer;
+  background-color: #562b81;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  padding: 0.2rem 0.7rem;
+}
