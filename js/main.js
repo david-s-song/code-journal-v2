@@ -13,9 +13,10 @@ function imageEntry(event) {
 }
 
 function submitForm(event) {
+  event.preventDefault();
   var newEntryObj = {};
   data.nextEntryId++;
   data.entries.unshift(newEntryObj);
-  $image.setAttribute('src', '../images/placeholder-image-square.jpg');
+  $image.setAttribute('src', 'images/placeholder-image-square.jpg');
   $formEntry.reset();
 }
