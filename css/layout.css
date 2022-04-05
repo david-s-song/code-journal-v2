@@ -18,7 +18,7 @@
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 450px) {
   .container {
     max-width: 100%;
   }
@@ -32,20 +32,25 @@
     width: 50%;
   }
 
+  .column-full {
+    max-width: 741px;
+  }
+
   .display-flex {
     display: flex;
   }
 
+  .image-wrapper {
+    width: 50%;
+  }
+
   .title-photo-container {
     margin-left: 30px;
-  }
-
-  #notes,
-  .btn-wrapper {
-    width: 714px;
+    width: 50%;
   }
 
   .btn-wrapper {
+    width: 100%;
     display: flex;
     justify-content: end;
   }

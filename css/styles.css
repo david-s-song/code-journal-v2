@@ -25,14 +25,14 @@ body {
 }
 
 .image {
-  width: 340px;
+  width: 100%;
   height: 245px;
   left: 17px;
   top: 126px;
   border-radius: 4px;
   margin-bottom: 1.5rem;
 }
-
+%
 #title,
 #photourl,
 #notes {
@@ -43,7 +43,7 @@ body {
 }
 
 .placeholder {
-  width: 341px;
+  width: 100%;
   height: 40px;
   left: 16px;
   top: 426px;
@@ -54,7 +54,7 @@ body {
 }
 
 .textarea {
-  width: 341px;
+  width: 100%;
   height: 149px;
   left: 17px;
   top: 623px;
@@ -71,7 +71,6 @@ body {
 .btn {
   display: flex;
   justify-content: end;
-  width: 341px;
 }
 
 .button-save {
