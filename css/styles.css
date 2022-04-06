@@ -11,10 +11,23 @@ body {
   background-color: #562b81;
 }
 
+.header-wrapper {
+  display: flex;
+}
+
 .header-logo {
   color: white;
   font-size: 20px;
   line-height: 27px;
+}
+
+.header-nav-entries {
+  padding-left: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }
 
 .new-entry-header,

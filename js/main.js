@@ -16,7 +16,7 @@ function submitForm(event) {
   event.preventDefault();
   var newEntryObj = {};
   newEntryObj.title = $formEntry.elements.title.value;
-  newEntryObj.photoUrl = $formEntry.elements.photourl.value;
+  newEntryObj.photourl = $formEntry.elements.photourl.value;
   newEntryObj.notes = $formEntry.elements.notes.value;
   newEntryObj.entryId = data.nextEntryId;
   data.nextEntryId++;
@@ -33,9 +33,10 @@ function renderEntry(entryObj) {
   $divImageWrapper.setAttribute('class', 'image-entries');
   $entryEl.appendChild($divImageWrapper);
 
-  var $entryImage = document.createElement('image');
+  var $entryImage = document.createElement('img');
   $entryImage.className = 'image';
-  $entryImage.src = entryObj.photourl;
+  $entryImage.setAttribute('src', entryObj.photourl);
+  $entryImage.setAttribute('alt', 'entry-image');
   $divImageWrapper.appendChild($entryImage);
 
   var $divPgWrapper = document.createElement('div');
