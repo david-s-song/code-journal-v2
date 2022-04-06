@@ -11,6 +11,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .column-full,
@@ -40,12 +41,14 @@
     display: flex;
   }
 
-  .title-photo-container {
+  .title-photo-container,
+  .title-paragraph-entries-wrapper {
     margin-left: 30px;
     width: 50%;
   }
 
-  .image-wrapper {
+  .image-wrapper,
+  .image-entries {
     width: 50%;
   }
 
@@ -53,5 +56,9 @@
     width: 100%;
     display: flex;
     justify-content: end;
+  }
+
+  .li-entry-wrapper {
+    display: flex;
   }
 }
