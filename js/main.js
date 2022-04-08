@@ -6,6 +6,7 @@ var $formEntry = document.querySelector('.form-entry');
 
 $photoUrl.addEventListener('input', imageEntry);
 $formEntry.addEventListener('submit', submitForm);
+document.addEventListener('DOMContentLoaded', DOMContentLoaded);
 
 function imageEntry(event) {
   var photoUrl = event.target.value;
@@ -63,4 +64,15 @@ function DOMContentLoaded(event) {
     $entriesList.appendChild(renderedEntry);
   }
 }
-document.addEventListener('DOMContentLoaded', DOMContentLoaded);
+
+var $navEntries = document.querySelector('.nav-entries-a');
+
+var $entries = document.querySelector('.entries');
+var $entryForm = document.querySelector('.entry-form');
+
+function viewEntryForm(event) {
+  $entryForm.className = 'view entry-form';
+  $entries.className = 'view entries hidden';
+}
+
+$navEntries.addEventListener('click', viewEntryForm);

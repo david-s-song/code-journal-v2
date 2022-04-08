@@ -25,45 +25,44 @@
           <div class="header-wrapper">
             <h2 class="header-logo">Code Journal</h2>
             <nav class="header-nav-entries">
-              <a href="#"><h3 class="nav-entries">Entries</h3></a>
+              <a class="nav-entries-a" href="#"><h3 class="nav-entries">Entries</h3></a>
             </nav>
           </div>
         </div>
       </div>
     </div>
   </header>
-
-  <div class="view" data-view="entry-form">
+  <div class="view entry-form" data-view="entry-form">
     <main>
       <div class="container">
-        <div class="row">
-          <div class="column-full">
-            <div class="title-wrapper">
-              <h1 class="new-entry-header">New Entry</h1>
-            </div>
-          </div>
-        </div>
         <form class="form-entry">
           <div class="row">
-            <div class="column-full display-flex">
-              <div class="image-wrapper">
-                <img src="../code-journal-v2/images/placeholder-image-square.jpg" alt="photoUrlImage" class="image">
+            <div class="column-full">
+              <div>
+                <h1 class="new-entry-header">New Entry</h1>
               </div>
-              <div class="title-photo-container">
-                <div class="info-wrapper">
-                  <div>
-                    <label for="title">Title</label>
-                  </div>
-                  <div>
-                    <input id="title" name="title" type="text" class="placeholder" required>
-                  </div>
+            </div>
+            <div class="column-full">
+              <div class="new-entry-wrapper">
+                <div class="image-wrapper">
+                  <img src="../code-journal-v2/images/placeholder-image-square.jpg" alt="photoUrlImage" class="image">
                 </div>
-                <div class="info-wrapper">
-                  <div>
-                    <label for="photourl">Photo Url</label>
+                <div class="title-photo-container">
+                  <div class="info-wrapper">
+                    <div>
+                      <label for="title">Title</label>
+                    </div>
+                    <div>
+                      <input id="title" name="title" type="text" class="placeholder" required>
+                    </div>
                   </div>
-                  <div>
-                    <input id="photourl" name="photourl" type="url" class="placeholder" required>
+                  <div class="info-wrapper">
+                    <div>
+                      <label for="photourl">Photo Url</label>
+                    </div>
+                    <div>
+                      <input id="photourl" name="photourl" type="url" class="placeholder" required>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -87,11 +86,8 @@
         </form>
       </div>
     </main>
-    <script src="js/data.js"></script>
-    <script src="js/main.js"></script>
   </div>
-
-  <div class="view sibling" data-view="entries">
+  <div class="view entries" data-view="entries">
     <div class="container">
       <div class="row">
         <div class="column-full">
@@ -110,19 +106,21 @@
           </div>
           <ul class="new-entries">
             <!-- <li class="li-entry-wrapper">
-              <div class="image-entries">
-                <img class="image" src="images/placeholder-image-square.jpg" alt="photos for entries">
-              </div>
-              <div class="title-paragraph-entries-wrapper">
-                <h2 class="entry-title">Michael Jordan</h2>
-                <p class="entry-paragraph">Greatest basketball player of all time</p>
-              </div>
-            </li> -->
+                <div class="image-entries">
+                  <img class="image" src="images/placeholder-image-square.jpg" alt="photos for entries">
+                </div>
+                <div class="title-paragraph-entries-wrapper">
+                  <h2 class="entry-title">Michael Jordan</h2>
+                  <p class="entry-paragraph">Greatest basketball player of all time</p>
+                </div>
+              </li> -->
           </ul>
         </div>
       </div>
     </div>
   </div>
-</body>
 
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
