@@ -66,13 +66,35 @@ function DOMContentLoaded(event) {
 }
 
 var $navEntries = document.querySelector('.nav-entries-a');
-
 var $entries = document.querySelector('.entries');
 var $entryForm = document.querySelector('.entry-form');
+
+function viewEntries(event) {
+  $entryForm.className = 'view entry-form hidden';
+  $entries.className = 'view entries';
+}
+
+$navEntries.addEventListener('click', viewEntries);
+
+var $newButton = document.querySelector('.button-new');
 
 function viewEntryForm(event) {
   $entryForm.className = 'view entry-form';
   $entries.className = 'view entries hidden';
 }
 
-$navEntries.addEventListener('click', viewEntryForm);
+$newButton.addEventListener('click', viewEntryForm);
+
+var $saveButton = document.querySelector('.button-save');
+
+function viewEntriesSave(event) {
+  $entryForm.className = 'view entry-form hidden';
+  $entries.className = 'view entries';
+}
+$saveButton.addEventListener('click', viewEntriesSave);
+
+if (data.view === 'entry-form') {
+  viewEntryForm();
+} else {
+  viewEntries();
+}

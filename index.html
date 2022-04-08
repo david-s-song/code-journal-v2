@@ -16,7 +16,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <header>
     <div class="container header-background-purple">
@@ -32,8 +31,8 @@
       </div>
     </div>
   </header>
-  <div class="view entry-form" data-view="entry-form">
-    <main>
+  <main>
+    <div class="view entry-form" data-view="entry-form">
       <div class="container">
         <form class="form-entry">
           <div class="row">
@@ -85,40 +84,40 @@
           </div>
         </form>
       </div>
-    </main>
-  </div>
-  <div class="view entries" data-view="entries">
-    <div class="container">
-      <div class="row">
-        <div class="column-full">
-          <div class="entries-header-wrapper">
-            <div class="entries-header">
-              <h1 class="new-entries-header">Entries</h1>
-              <div class="btn">
-                <div class="btn-wrapper">
-                  <button class="button-new">NEW</button>
+    </div>
+    <div class="view entries" data-view="entries">
+      <div class="container">
+        <div class="row">
+          <div class="column-full">
+            <div class="entries-header-wrapper">
+              <div class="entries-header">
+                <h1 class="new-entries-header">Entries</h1>
+                <div class="btn">
+                  <div class="btn-wrapper">
+                    <button class="button-new">NEW</button>
+                  </div>
                 </div>
               </div>
+              <!-- <div class="text-wrapper">
+                <p class="text-align-center">No entries have been recorded.</p>
+              </div> -->
             </div>
-            <div class="text-wrapper">
-              <p class="text-align-center">No entries have been recorded.</p>
-            </div>
+            <ul class="new-entries">
+              <!-- <li class="li-entry-wrapper">
+                  <div class="image-entries">
+                    <img class="image" src="images/placeholder-image-square.jpg" alt="photos for entries">
+                  </div>
+                  <div class="title-paragraph-entries-wrapper">
+                    <h2 class="entry-title">Michael Jordan</h2>
+                    <p class="entry-paragraph">Greatest basketball player of all time</p>
+                  </div>
+                </li> -->
+            </ul>
           </div>
-          <ul class="new-entries">
-            <!-- <li class="li-entry-wrapper">
-                <div class="image-entries">
-                  <img class="image" src="images/placeholder-image-square.jpg" alt="photos for entries">
-                </div>
-                <div class="title-paragraph-entries-wrapper">
-                  <h2 class="entry-title">Michael Jordan</h2>
-                  <p class="entry-paragraph">Greatest basketball player of all time</p>
-                </div>
-              </li> -->
-          </ul>
         </div>
       </div>
     </div>
-  </div>
+  </main>
 
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
