@@ -30,6 +30,7 @@ function submitForm(event) {
   $image.setAttribute('src', 'images/placeholder-image-square.jpg');
   $formEntry.reset();
   $entriesList.prepend(renderEntry(newEntryObj));
+  data.view = 'entries';
   switchViews('entries');
 }
 
@@ -81,7 +82,11 @@ function renderEntries() {
     var renderedElement = renderEntry(data.entries[i]);
     $entriesList.appendChild(renderedElement);
   }
-  switchViews('entries');
+  if (data.view === 'entries') {
+    viewEntries();
+  } else {
+    viewEntryForm();
+  }
 }
 
 function viewEntries(event) {
