@@ -77,7 +77,10 @@ function switchViews(viewName) {
   }
 }
 
+var $textWrapper = document.querySelector('.text-wrapper');
+
 function renderEntries() {
+  $textWrapper.className = 'hidden';
   for (var i = 0; i < data.entries.length; i++) {
     var renderedElement = renderEntry(data.entries[i]);
     $entriesList.appendChild(renderedElement);
